@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "VT323";
+    src: url(..Font/VT323-Regular.ttf);
+    font-family: "Inter";
+    src: url(../Font/Inter-VariableFont_slnt,wght.ttf);
+}
+
 .container{
     margin : 0px
 }
@@ -120,7 +127,6 @@ hr{
         border-radius: 18px;
         width: 130px;
         height: 50px;
-        font-family: 'Inter', sans-serif;
         font-size: 25px;
     }
 
@@ -147,40 +153,3 @@ hr{
         border-radius: 10px;
     }
 }
-
-/* @media screen and (max-width: 767px){
-    h1{
-        font-size: 60px;
-    }
-
-    button{
-        border-radius: 18px;
-        width: 130px;
-        height: 50px;
-        font-family: 'Inter', sans-serif;
-        font-size: 25px;
-    }
-
-    .button{
-        font-size: 25px;
-    }
-
-    .critere{
-        font-size: 25px;
-    }
-
-    .classement{
-        font-size: 25px;
-        padding: 15px 0px;
-    }
-
-    .numero{
-
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-    }
-} */

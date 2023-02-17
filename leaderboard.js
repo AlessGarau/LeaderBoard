@@ -15,7 +15,7 @@ class Stage {
 
 // ============ CREATE STAGE ============
 
-let stage1 = new Stage("stage 1")
+let stage1 = new Stage("STAGE 1")
 stage1.addPlayer("Louisan", 10000),
 stage1.addPlayer("Benjos", 200),
 stage1.addPlayer("Djédjé", 9000),
@@ -23,32 +23,33 @@ stage1.addPlayer("Julien", 13000),
 stage1.addPlayer("Alexis", 7000)
 
 
-let stage2 = new Stage("stage 2")
+let stage2 = new Stage("STAGE 2")
 stage2.addPlayer("Louisan", 788),
 stage2.addPlayer("Benjos", 07654),
 stage2.addPlayer("Djédjé", 4579),
 stage2.addPlayer("Julien", 2649),
 stage2.addPlayer("Alexis", 222222)
 
-let stage3 = new Stage("stage 3")
+let stage3 = new Stage("STAGE 3")
 stage3.addPlayer("Louisan", 8678),
 stage3.addPlayer("Benjos", 647),
 stage3.addPlayer("Djédjé", 2974),
 stage3.addPlayer("Julien", 1334),
 stage3.addPlayer("Alexis", 11111)
 
-let stage4 = new Stage("stage 4")
+let stage4 = new Stage("STAGE 4")
 stage4.addPlayer("Louisan", 4522),
 stage4.addPlayer("Benjos", 23333),
 stage4.addPlayer("Djédjé", 97000),
 stage4.addPlayer("Julien", 87655),
 stage4.addPlayer("Alexis", 00000)
 
-// let map3 = new Stage("MAP 3")
-// let map4 = new Stage("MAP 4")
-// let map5 = new Stage("MAP 5")
-
-
+let stage5 = new Stage("STAGE 5")
+stage5.addPlayer("Louisan", 80999),
+stage5.addPlayer("Benjos", 67000),
+stage5.addPlayer("Djédjé", 34000),
+stage5.addPlayer("Julien", 12000),
+stage5.addPlayer("Alexis", 1)
 
 // ============ PRINT SCOREBOARD ============
 
@@ -121,7 +122,7 @@ function resetContain(balise){
 // ============ AFFICHER BOUTON MAP AND USE THEM ============
 
 let contain = document.querySelector("div.contain")
-stageList = [stage1, stage2, stage3, stage4]
+stageList = [stage1, stage2, stage3, stage4, stage5]
 let i = 1000
 let btnList = []
 
@@ -156,15 +157,15 @@ for(let stage of stageList){
 
     // Ajout d'un gestionnaire d'événement à chaque bouton
     buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Suppression de la classe 'active' pour tous les boutons
-        buttons.forEach(button => {
-        button.classList.remove('background')
-        button.classList.remove('textColor')
-        });
-        // Ajout de la classe 'active' pour le bouton sélectionné
-        button.classList.add('background')
-        button.classList.add('textColor')
+        button.addEventListener('click', () => {
+            // Suppression de la classe 'active' pour tous les boutons
+            buttons.forEach(button => {
+            button.classList.remove('background')
+            button.classList.remove('textColor')
+            });
+            // Ajout de la classe 'active' pour le bouton sélectionné
+            button.classList.add('background')
+            button.classList.add('textColor')
 
         })
     })
