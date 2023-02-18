@@ -9,7 +9,7 @@ I mostly used Javascript. Oh, and it was the first time I used Javascript at all
 - Get every score from players and display them on the screen too
 - All scores are sort to be displayed in ascending order
 
-## 🛠️ Tech Stack
+## 🛠️ Stacks
 - Javascript
 - CSS
 - HTML
